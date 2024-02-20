@@ -1,0 +1,404 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F690 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+[v i1___fltol __fltol `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+[v i1___fldiv __fldiv `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+[v i1___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"58 H:\Technical\PIC\UltraSonic690\UltraSonic690.X\UltraSonic690.c
+[v _calc_dist calc_dist `(i  1 e 2 0 ]
+[v i1_calc_dist calc_dist `(i  1 e 2 0 ]
+"85
+[v _thresholdf thresholdf `(v  1 e 1 0 ]
+"140
+[v _PWM1_Set_Duty PWM1_Set_Duty `(v  1 e 1 0 ]
+"147
+[v _main main `(v  1 e 1 0 ]
+"294
+[v _ISR ISR `II(v  1 e 1 0 ]
+"59 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f690.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"495
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+[s S220 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1GE 1 0 :1:6 
+`uc 1 T1GINV 1 0 :1:7 
+]
+"537
+[s S228 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[u S232 . 1 `S220 1 . 1 0 `S228 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES232  1 e 1 @16 ]
+"587
+[v _TMR2 TMR2 `VEuc  1 e 1 @17 ]
+[s S34 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"615
+[s S38 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S46 . 1 `S34 1 . 1 0 `S38 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES46  1 e 1 @18 ]
+"749
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"763
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
+[s S64 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 DC1B 1 0 :2:4 
+`uc 1 P1M 1 0 :2:6 
+]
+"785
+[s S68 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+`uc 1 DC1B0 1 0 :1:4 
+`uc 1 DC1B1 1 0 :1:5 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+[u S77 . 1 `S64 1 . 1 0 `S68 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES77  1 e 1 @23 ]
+[s S191 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRABPU 1 0 :1:7 
+]
+"1195
+[s S198 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S202 . 1 `S191 1 . 1 0 `S198 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES202  1 e 1 @129 ]
+[s S95 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1260
+[u S102 . 1 `S95 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES102  1 e 1 @133 ]
+[s S112 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1309
+[u S118 . 1 `S112 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES118  1 e 1 @134 ]
+[s S128 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1351
+[u S137 . 1 `S128 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES137  1 e 1 @135 ]
+"1661
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+[s S150 . 1 `uc 1 ANS0 1 0 :1:0 
+`uc 1 ANS1 1 0 :1:1 
+`uc 1 ANS2 1 0 :1:2 
+`uc 1 ANS3 1 0 :1:3 
+`uc 1 ANS4 1 0 :1:4 
+`uc 1 ANS5 1 0 :1:5 
+`uc 1 ANS6 1 0 :1:6 
+`uc 1 ANS7 1 0 :1:7 
+]
+"3019
+[u S159 . 1 `S150 1 . 1 0 ]
+[v _ANSELbits ANSELbits `VES159  1 e 1 @286 ]
+[s S171 . 1 `uc 1 ANS8 1 0 :1:0 
+`uc 1 ANS9 1 0 :1:1 
+`uc 1 ANS10 1 0 :1:2 
+`uc 1 ANS11 1 0 :1:3 
+]
+"3077
+[u S176 . 1 `S171 1 . 1 0 ]
+[v _ANSELHbits ANSELHbits `VES176  1 e 1 @287 ]
+"3463
+[v _CCP1IE CCP1IE `VEb  1 e 0 @1122 ]
+"3466
+[v _CCP1IF CCP1IF `VEb  1 e 0 @98 ]
+"3469
+[v _CCP1M0 CCP1M0 `VEb  1 e 0 @184 ]
+"3472
+[v _CCP1M1 CCP1M1 `VEb  1 e 0 @185 ]
+"3475
+[v _CCP1M2 CCP1M2 `VEb  1 e 0 @186 ]
+"3478
+[v _CCP1M3 CCP1M3 `VEb  1 e 0 @187 ]
+"3547
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3574
+[v _INTE INTE `VEb  1 e 0 @92 ]
+"3577
+[v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
+"3580
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"3715
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"3730
+[v _PSA PSA `VEb  1 e 0 @1035 ]
+"3775
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"3778
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"3781
+[v _RB6 RB6 `VEb  1 e 0 @54 ]
+"3793
+[v _RC2 RC2 `VEb  1 e 0 @58 ]
+"3796
+[v _RC3 RC3 `VEb  1 e 0 @59 ]
+"3799
+[v _RC4 RC4 `VEb  1 e 0 @60 ]
+"3805
+[v _RC6 RC6 `VEb  1 e 0 @62 ]
+"3919
+[v _T0CS T0CS `VEb  1 e 0 @1037 ]
+"3922
+[v _T0IE T0IE `VEb  1 e 0 @93 ]
+"3925
+[v _T0IF T0IF `VEb  1 e 0 @90 ]
+"3931
+[v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @132 ]
+"3934
+[v _T1CKPS1 T1CKPS1 `VEb  1 e 0 @133 ]
+"3964
+[v _TMR1CS TMR1CS `VEb  1 e 0 @129 ]
+"3970
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"3973
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"3976
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"3982
+[v _TMR2IF TMR2IF `VEb  1 e 0 @97 ]
+"36 H:\Technical\PIC\UltraSonic690\UltraSonic690.X\UltraSonic690.c
+[v _threshold threshold `i  1 e 2 0 ]
+"37
+[v _minnthreshold minnthreshold `i  1 e 2 0 ]
+"38
+[v _minthreshold minthreshold `i  1 e 2 0 ]
+"39
+[v _maxthreshold maxthreshold `i  1 e 2 0 ]
+"40
+[v _count count `i  1 e 2 0 ]
+"41
+[v _calcount calcount `i  1 e 2 0 ]
+"42
+[v _highcount highcount `i  1 e 2 0 ]
+"43
+[v _calhighcount calhighcount `i  1 e 2 0 ]
+"44
+[v _lowcount lowcount `i  1 e 2 0 ]
+"45
+[v _dist dist `i  1 e 2 0 ]
+"46
+[v _thres thres `[4]uc  1 e 4 0 ]
+"47
+[v _D D `i  1 e 2 0 ]
+"48
+[v _i i `i  1 e 2 0 ]
+"147
+[v _main main `(v  1 e 1 0 ]
+{
+"292
+} 0
+"85
+[v _thresholdf thresholdf `(v  1 e 1 0 ]
+{
+"100
+} 0
+"58
+[v _calc_dist calc_dist `(i  1 e 2 0 ]
+{
+"60
+[v calc_dist@distance distance `i  1 a 2 53 ]
+"83
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 49 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 48 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 40 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 34 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 27 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 32 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 39 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 38 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 31 ]
+"8
+[v ___fldiv@a a `d  1 p 4 14 ]
+[v ___fldiv@b b `d  1 p 4 18 ]
+"185
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"140 H:\Technical\PIC\UltraSonic690\UltraSonic690.X\UltraSonic690.c
+[v _PWM1_Set_Duty PWM1_Set_Duty `(v  1 e 1 0 ]
+{
+"141
+[v PWM1_Set_Duty@DC DC `ui  1 p 2 0 ]
+"145
+} 0
+"294
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"350
+} 0
+"58
+[v i1_calc_dist calc_dist `(i  1 e 2 0 ]
+{
+"60
+[v i1calc_dist@distance distance `i  1 a 2 39 ]
+"83
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\xxtofl.c
+[v i1___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v i1___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v i1___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v i1___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v i1___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v i1___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v i1___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\Umul16.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v i1___wmul@product product `ui  1 a 2 4 ]
+"15
+[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\fltol.c
+[v i1___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v i1___fltol@exp1 exp1 `uc  1 a 1 35 ]
+[v i1___fltol@sign1 sign1 `uc  1 a 1 34 ]
+"43
+[v i1___fltol@f1 f1 `d  1 p 4 26 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\sprcdiv.c
+[v i1___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v i1___fldiv@grs grs `ul  1 a 4 20 ]
+"22
+[v i1___fldiv@rem rem `ul  1 a 4 13 ]
+"20
+[v i1___fldiv@new_exp new_exp `i  1 a 2 18 ]
+"19
+[v i1___fldiv@aexp aexp `uc  1 a 1 25 ]
+"18
+[v i1___fldiv@bexp bexp `uc  1 a 1 24 ]
+"16
+[v i1___fldiv@sign sign `uc  1 a 1 17 ]
+"8
+[v i1___fldiv@a a `d  1 p 4 0 ]
+[v i1___fldiv@b b `d  1 p 4 4 ]
+"185
+} 0
